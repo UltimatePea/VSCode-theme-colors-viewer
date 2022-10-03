@@ -13,6 +13,8 @@
                             return Object.entries(settings).map(([k,v]) => {
                                 if (k == "foreground"){
                                     return `color:${v}`
+                                } else if (v == "bold"){
+                                    return `font-weight:${v}`
                                 } else if (k == "fontStyle"){
                                     return `font-style:${v}`
                                 } else {
